@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hubungi abang Ganteng</title>
+    <style>
+        /* Import Font dari Google */
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: linear-gradient(45deg, #0f0c29, #302b63, #24243e);
+            overflow: hidden;
+        }
+
+        /* Dekorasi Lingkaran di Background */
+        body::before {
+            content: '';
+            position: absolute;
+            width: 300px;
+            height: 300px;
+            background: linear-gradient(#ff0057, #e64a19);
+            border-radius: 50%;
+            transform: translate(-150px, -150px);
+        }
+
+        body::after {
+            content: '';
+            position: absolute;
+            width: 250px;
+            height: 250px;
+            background: linear-gradient(#2196f3, #e91e63);
+            border-radius: 50%;
+            transform: translate(150px, 150px);
+        }
+
+        /* Card Utama */
+        .card {
+            position: relative;
+            width: 350px;
+            height: 450px;
+            background: rgba(255, 255, 255, 0.1);
+            margin: 30px;
+            box-shadow: 0 25px 45px rgba(0,0,0,0.1);
+            border-radius: 20px;
+            backdrop-filter: blur(15px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            transition: 0.5s;
+            z-index: 1;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            background: rgba(255, 255, 255, 0.15);
+        }
+
+        .img-box {
+            width: 120px;
+            height: 120px;
+            background: #fff;
+            border-radius: 50%;
+            overflow: hidden;
+            border: 4px solid rgba(255, 255, 255, 0.5);
+        }
+
+        .img-box img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .content {
+            text-align: center;
+            margin-top: 20px;
+            color: #fff;
+        }
+
+        .content h2 {
+            font-size: 1.5rem;
+            letter-spacing: 1px;
+        }
+
+        .content p {
+            font-size: 0.9rem;
+            font-weight: 300;
+            opacity: 0.8;
+            margin: 10px 0;
+        }
+
+        .btn {
+            margin-top: 20px;
+            padding: 10px 25px;
+            background: #fff;
+            color: #302b63;
+            text-decoration: none;
+            border-radius: 30px;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: #ff0057;
+            color: #fff;
+            letter-spacing: 2px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <div class="img-box">
+            <img src="profil.jpg" alt="Profile">
+        </div>
+        <div class="content">
+            <h2>@naputrra</h2>
+            <p>Jomblo</p>
+            <p>Infokan Janda terdekat!</p>
+            <a href="https://wa.me/6281321459842?text=Hi%20Ganteng!" class="btn">Chat aja</a>
+        </div>
+    </div>
+
+</body>
+</html>
